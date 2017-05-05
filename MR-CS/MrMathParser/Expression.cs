@@ -53,19 +53,20 @@ namespace MrMathParser
         {
             int[] indexes = ops.Select(x => s.IndexOf(x)).ToArray();
             if(indexes.Any(x => x >= 0)) {
-                char o = ops[0];
-                int minI = indexes[0];
-                for(int i = 1; i < ops.Length; i++ )
+                int i = ops.Length - 1;
+                char o = ops[i];
+                int maxI = indexes[i];
+                for( ; i >= 0; i-- )
                 {
                     var curI = indexes[i];
-                    if(minI == -1 || (curI != -1 && curI < minI))
+                    if(maxI == -1 || (curI != -1 && curI > maxI))
                     {
                         o = ops[i];
-                        minI = indexes[i];
+                        maxI = indexes[i];
                     }
                 }
 
-                return OpEval(s.Substring(0, minI), o, s.Substring(minI + 1));
+                return OpEval(s.Substring(0, maxI), o, s.Substring(maxI + 1));
             }
 
             throw new InvalidOperationException("Attempting to handle a binary operation on a non-binary operation", new Exception(s));

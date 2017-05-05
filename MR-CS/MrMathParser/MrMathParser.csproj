@@ -41,7 +41,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Expression.cs" />
-    <Compile Include="Helper\OpFinderResults.cs" />
     <Compile Include="Helper\TestExpression.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

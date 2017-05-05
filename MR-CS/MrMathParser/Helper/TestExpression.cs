@@ -32,6 +32,8 @@ namespace MrMathParser.Helper
                 {"5+1+10", 16 },
                 {"5*2+10", 20 },
                 {"5+2*10", 25 },
+                {"5*2*10", 100 },
+                {"5*2/10", 1 },
             };
             int i = 0;
             var errors = new List<int>();
@@ -50,7 +52,9 @@ namespace MrMathParser.Helper
                 }
                 i++;
             }
-            Console.WriteLine($"Errors at lines: {string.Join(",", errors.Select(x => x.ToString()).ToArray())}");
+
+            if(errors.Any())
+                Console.WriteLine($"Errors at lines: {string.Join(",", errors.Select(x => x.ToString()).ToArray())}");
             Console.WriteLine("===Complete===");
         }
 
