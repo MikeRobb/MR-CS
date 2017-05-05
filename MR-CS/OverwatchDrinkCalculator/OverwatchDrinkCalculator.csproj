@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{75A462E7-82D8-4466-9790-3B715B7636A9}</ProjectGuid>
+    <ProjectGuid>{EF257768-FE78-40E5-9E78-489C06924070}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>MR_CS</RootNamespace>
-    <AssemblyName>MR-CS</AssemblyName>
+    <RootNamespace>OverwatchDrinkCalculator</RootNamespace>
+    <AssemblyName>OverwatchDrinkCalculator</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="OverwatchDrinkCalculator.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OverwatchDrinkCalculator.Designer.cs">
+      <DependentUpon>OverwatchDrinkCalculator.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -69,12 +75,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\MrMathParser\MrMathParser.csproj">
-      <Project>{cd15820f-5858-4a48-82c9-bc3b117e569f}</Project>
-      <Name>MrMathParser</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

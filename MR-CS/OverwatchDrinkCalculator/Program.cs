@@ -3,9 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using MrMathParser.Helper;
 
-namespace MR_CS
+namespace OverwatchDrinkCalculator
 {
     static class Program
     {
@@ -17,8 +16,7 @@ namespace MR_CS
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-
-            TestExpression.Test();
+            Application.Run(new OverwatchDrinkCalculator());
         }
     }
 }

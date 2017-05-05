@@ -7,6 +7,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MR-CS", "MR-CS\MR-CS.csproj
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{B761F60A-E84A-4F1D-B000-181926BC0190}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OverwatchDrinkCalculator", "OverwatchDrinkCalculator\OverwatchDrinkCalculator.csproj", "{EF257768-FE78-40E5-9E78-489C06924070}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MrMathParser", "MrMathParser\MrMathParser.csproj", "{CD15820F-5858-4A48-82C9-BC3B117E569F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -17,8 +21,20 @@ Global
 		{75A462E7-82D8-4466-9790-3B715B7636A9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{75A462E7-82D8-4466-9790-3B715B7636A9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{75A462E7-82D8-4466-9790-3B715B7636A9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EF257768-FE78-40E5-9E78-489C06924070}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EF257768-FE78-40E5-9E78-489C06924070}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EF257768-FE78-40E5-9E78-489C06924070}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EF257768-FE78-40E5-9E78-489C06924070}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CD15820F-5858-4A48-82C9-BC3B117E569F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CD15820F-5858-4A48-82C9-BC3B117E569F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CD15820F-5858-4A48-82C9-BC3B117E569F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CD15820F-5858-4A48-82C9-BC3B117E569F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{EF257768-FE78-40E5-9E78-489C06924070} = {B761F60A-E84A-4F1D-B000-181926BC0190}
+		{CD15820F-5858-4A48-82C9-BC3B117E569F} = {B761F60A-E84A-4F1D-B000-181926BC0190}
 	EndGlobalSection
 EndGlobal
