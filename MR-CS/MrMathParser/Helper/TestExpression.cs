@@ -47,15 +47,11 @@ namespace MrMathParser.Helper
             {
                 try
                 {
-                    var asdf = string.Empty;
-                    if (t.Key == "5*2+10")
-                        asdf = t.Key;
                     Assert(t.Key, t.Value);
                 }
                 catch (Exception e)
                 {
-                    var errMsg = $"=>{e.Message}";
-                    Log(errMsg);
+                    Log($"=>{e.Message}");
                     errorCount++;
                 }
                 i++;
