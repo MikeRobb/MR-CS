@@ -1,13 +1,18 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using MrLogger;
 
 namespace MrMathParser.Helper
 {
     public static class TestExpression
     {
+        private static Logger _log = new Logger($"MrMathParserTest_{DateTime.Now.ToString("yyyyMMdd")}", @"C:\Users\Mike Laptop\Desktop\Data", "flog");
+
+        public static void Log(string msg)
+        {
+            _log.Log(msg);
+        }
+
         public static void Test()
         {
             var tests = new Dictionary<string, int>()
@@ -36,8 +41,9 @@ namespace MrMathParser.Helper
                 {"5*2/10", 1 },
             };
             int i = 0;
-            var errors = new List<int>();
-            foreach(var t in tests)
+            int errorCount = 0;
+            Log($"Starting MrMathParser {tests.Count} Test(s)");
+            foreach (var t in tests)
             {
                 try
                 {
@@ -45,17 +51,17 @@ namespace MrMathParser.Helper
                     if (t.Key == "5*2+10")
                         asdf = t.Key;
                     Assert(t.Key, t.Value);
-                } catch(Exception e)
+                }
+                catch (Exception e)
                 {
-                    errors.Add(i);
-                    Console.WriteLine($"=>{e.Message}");
+                    var errMsg = $"=>{e.Message}";
+                    Log(errMsg);
+                    errorCount++;
                 }
                 i++;
             }
 
-            if(errors.Any())
-                Console.WriteLine($"Errors at lines: {string.Join(",", errors.Select(x => x.ToString()).ToArray())}");
-            Console.WriteLine("===Complete===");
+            Log($"Finished MrMathParser with {tests.Count - errorCount} of {tests.Count} successful");
         }
 
         private static void Assert(string s, int expectedResult)

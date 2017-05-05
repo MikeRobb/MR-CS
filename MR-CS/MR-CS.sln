@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OverwatchDrinkCalculator", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MrMathParser", "MrMathParser\MrMathParser.csproj", "{CD15820F-5858-4A48-82C9-BC3B117E569F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MrLogger", "MrLogger\MrLogger.csproj", "{E188CDA4-F472-4302-A2E0-569F102FE364}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -29,6 +31,10 @@ Global
 		{CD15820F-5858-4A48-82C9-BC3B117E569F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CD15820F-5858-4A48-82C9-BC3B117E569F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CD15820F-5858-4A48-82C9-BC3B117E569F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E188CDA4-F472-4302-A2E0-569F102FE364}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E188CDA4-F472-4302-A2E0-569F102FE364}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E188CDA4-F472-4302-A2E0-569F102FE364}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E188CDA4-F472-4302-A2E0-569F102FE364}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -36,5 +42,6 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{EF257768-FE78-40E5-9E78-489C06924070} = {B761F60A-E84A-4F1D-B000-181926BC0190}
 		{CD15820F-5858-4A48-82C9-BC3B117E569F} = {B761F60A-E84A-4F1D-B000-181926BC0190}
+		{E188CDA4-F472-4302-A2E0-569F102FE364} = {B761F60A-E84A-4F1D-B000-181926BC0190}
 	EndGlobalSection
 EndGlobal
