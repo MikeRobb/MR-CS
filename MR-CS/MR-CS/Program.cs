@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using MrMathParser.Helper;
+using LeagueOfLegendsDrinkCalculator;
 
 namespace MR_CS
 {
@@ -18,7 +18,7 @@ namespace MR_CS
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
 
-            TestExpression.Test();
+            Application.Run(new Menu());
         }
     }
 }

@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
-VisualStudioVersion = 14.0.23107.0
+VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MR-CS", "MR-CS\MR-CS.csproj", "{75A462E7-82D8-4466-9790-3B715B7636A9}"
 EndProject
@@ -12,6 +12,10 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MrMathParser", "MrMathParser\MrMathParser.csproj", "{CD15820F-5858-4A48-82C9-BC3B117E569F}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MrLogger", "MrLogger\MrLogger.csproj", "{E188CDA4-F472-4302-A2E0-569F102FE364}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Calculators", "Calculators", "{026CD259-8C41-409B-A63F-57A45387DD1C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LeagueOfLegendsDrinkCalculator", "LeagueOfLegendsDrinkCalculator\LeagueOfLegendsDrinkCalculator.csproj", "{117087CB-2414-4994-A583-6E1E9986430D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -35,6 +39,10 @@ Global
 		{E188CDA4-F472-4302-A2E0-569F102FE364}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E188CDA4-F472-4302-A2E0-569F102FE364}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E188CDA4-F472-4302-A2E0-569F102FE364}.Release|Any CPU.Build.0 = Release|Any CPU
+		{117087CB-2414-4994-A583-6E1E9986430D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{117087CB-2414-4994-A583-6E1E9986430D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{117087CB-2414-4994-A583-6E1E9986430D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{117087CB-2414-4994-A583-6E1E9986430D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -43,5 +51,6 @@ Global
 		{EF257768-FE78-40E5-9E78-489C06924070} = {B761F60A-E84A-4F1D-B000-181926BC0190}
 		{CD15820F-5858-4A48-82C9-BC3B117E569F} = {B761F60A-E84A-4F1D-B000-181926BC0190}
 		{E188CDA4-F472-4302-A2E0-569F102FE364} = {B761F60A-E84A-4F1D-B000-181926BC0190}
+		{117087CB-2414-4994-A583-6E1E9986430D} = {026CD259-8C41-409B-A63F-57A45387DD1C}
 	EndGlobalSection
 EndGlobal
