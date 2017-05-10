@@ -40,9 +40,7 @@ namespace MrMathParser
 
             return int.Parse(s);
         }
-
-
-
+        
         #region Binary Operations
         private static bool IsBinaryOp(string s, char[] ops)
         {

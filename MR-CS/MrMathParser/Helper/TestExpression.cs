@@ -10,7 +10,7 @@ namespace MrMathParser.Helper
 
         public static void Log(string msg)
         {
-            _log.Log(msg);
+            //_log.Log(msg);
         }
 
         public static void Test()
