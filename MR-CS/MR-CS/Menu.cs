@@ -14,10 +14,15 @@ namespace MR_CS
 
         public void LaunchForm<T>() where T : Form, new()
         {
-            this.Hide();
             var f = new T();
-            f.Closed += (s, args) => this.Show();
+            this.Hide();
+            f.Closed += (s, args) =>
+            {
+                DesktopLocation = f.DesktopLocation;
+                this.Show();
+            };
             f.Show();
+            f.DesktopLocation = this.DesktopLocation;
         }
     }
 }
