@@ -10,6 +10,7 @@ namespace MR_CS
             InitializeComponent();
 
             launchLolDrinkCalcBtn.Click += (s, args) => LaunchForm<LoLDrinkCalc>();
+            launchOwDrinkCalcBtn.Click += (s, args) => LaunchForm<OverwatchDrinkCalculator.OverwatchDrinkCalculator>();
         }
 
         public void LaunchForm<T>() where T : Form, new()

@@ -84,6 +84,13 @@
       <Project>{117087cb-2414-4994-a583-6e1e9986430d}</Project>
       <Name>LeagueOfLegendsDrinkCalculator</Name>
     </ProjectReference>
+    <ProjectReference Include="..\OverwatchDrinkCalculator\OverwatchDrinkCalculator.csproj">
+      <Project>{ef257768-fe78-40e5-9e78-489c06924070}</Project>
+      <Name>OverwatchDrinkCalculator</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
